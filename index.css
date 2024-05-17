@@ -1,0 +1,169 @@
+body {
+    font-family: sans-serif;
+    margin: unset;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+}
+
+#root {
+    width: 70%;
+    background-color: #f1f1f1;
+}
+
+header {
+    margin: 0;
+    background-color: #121212;
+    padding: 0.625rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-change-option {
+    height: 5rem;
+    border-bottom: 0.063rem solid #9a9a9a;
+    display: flex;
+    align-items: center;
+}
+
+#change-view {
+    background-color: transparent;
+    display: inline-block;
+    padding: 0.313rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+}
+
+.movie-list {
+    width: 60%;
+    border-right: 0.063rem solid #9a9a9a;
+}
+
+.movie-list {
+    display: block; /* This should not force block display on table rows and cells */
+}
+
+.movie-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.movie-list td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.add-form {
+    width: 40%;
+    padding: 2rem;
+}
+
+li {
+    padding: 2rem;
+}
+
+.add-movie {
+    background-color: #f5c518;
+    display: inline-block;
+    color: black;
+    padding: 0.625rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+}
+
+.submit-button {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background: #f5c518;
+    color: black;
+    border: 0.063rem solid grey;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background: #b49112;
+}
+
+label {
+    color: black;
+    width: 100px;
+    padding: 0.625rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    display: inline-block;
+    text-align: left;
+}
+
+.movie-tracker{
+    position: relative;
+    display: inline-block;
+    margin: 0.625rem;
+    border-radius: 0.25rem;
+    background-color: #f5c518;
+    color: black;
+    padding: 0.625rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+}
+
+.movies, .series {
+    color:  #f5c518;
+    padding: 0.625rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.search-container{
+    display: flex;
+    max-height: 2rem;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    margin: 0.625rem;
+}
+/* Style the search field */
+.search-container input[type=text] {
+    padding: 0.625rem;
+    font-size: 0.625rem;
+    font-weight: bold;
+    border: 0.063rem solid grey;
+    float: left;
+    width: 25rem;
+    background: #f1f1f1;
+}
+
+/* Style the submit button */
+.search-container button {
+    padding: 0.5rem;
+    background: #f5c518;
+    color: white;
+    border: 0.063rem solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #b49112;
+}
+
+/* Clear floats */
+.search-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
